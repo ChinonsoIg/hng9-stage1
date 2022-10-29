@@ -7,6 +7,7 @@ main {
   padding: 64px 0;
   max-width: 1152px;
   margin: 0 auto;
+  /* border: 1px solid red; */
 }
 
 header {
@@ -21,7 +22,6 @@ header {
   height: 88px;
   width: 88px;
 }
-
 
 .name {
   font-family: Inter;
@@ -44,6 +44,40 @@ header {
 .share_btn_mobile {
   display: none;
 }
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 56px;
+  /* border: 1px solid red; */
+
+}
+
+#btn__zuri, #books, #book__python, #pitch, #book__design {
+  height: 76px;
+  width: 100%;
+  background-color: #EAECF0;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.social_icons {
+  height: 76px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social_icon {
+  height: 24px;
+  width: 24px;
+}
+
 
 
 /* Mobile View 575.98px and below */
