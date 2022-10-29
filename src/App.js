@@ -9,12 +9,12 @@ import ZuriInternship from "./assets/images/zuri_internship.svg";
 
 function App() {
   
-  
+
   return (
     <div className="App">
       <main>
         <header>
-          <img src={ProfileImage} alt="Profile" className="profile_img"  />
+          <img src={ProfileImage} alt="Profile" className="profile_img" />
           <p className="name">Annette Black</p>
           <img src={ShareBtn} alt="Share button desktop" className="share_btn" />
           <img src={ShareBtnMobile} alt="Share button mobile" className="share_btn_mobile" />
