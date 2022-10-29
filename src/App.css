@@ -17,12 +17,13 @@ header {
   position: relative;
 }
 
-.profile_img {
+#profile__img {
   height: 88px;
   width: 88px;
+  border-radius: 50%;
 }
 
-.name {
+#twitter {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0em;
@@ -30,6 +31,10 @@ header {
   color: #101828;
   padding: 0;
   margin: 0;
+}
+
+#slack {
+  display: none;
 }
 
 .share_btn {
