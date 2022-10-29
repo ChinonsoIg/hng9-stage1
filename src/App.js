@@ -1,5 +1,4 @@
 import './App.css';
-import ProfileImage from './assets/images/profile_img.svg';
 import Passport from './assets/images/passport.jpeg';
 import ShareBtn from './assets/images/share_btn.svg';
 import ShareBtnMobile from './assets/images/share_btn_mobile.svg';
