@@ -7,7 +7,6 @@ main {
   padding: 64px 0;
   max-width: 1152px;
   margin: 0 auto;
-  /* border: 1px solid red; */
 }
 
 header {
@@ -71,6 +70,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 24px;
+  /* border: 1px solid red; */
 }
 
 .social_icon {
@@ -78,21 +78,91 @@ header {
   width: 24px;
 }
 
+footer {
+  height: 160px;
+  padding: 0 112px;
+  display: grid;
+  place-items: center;
+  /* border: 1px solid red; */
+}
+
+.footer_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  border-top: 1px solid #EAECF0;
+  /* border: 1px solid red; */
+}
+
+.light_text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #667085;
+}
+
+.zuri_internship_logo {
+  height: 32px;
+  width: 188px;
+  /* width: 100%; */
+}
+.I4G_logo {
+  height: 32px;
+  width: 132px;
+  /* width: 100%; */
+}
+
 
 
 /* Mobile View 575.98px and below */
 @media (max-width: 575.98px) {
   main {
-    padding: 64px 16px;
+    padding: 64px 16px 32px 16px;
   }
+
   .share_btn {
     display: none;
   }
+
   .share_btn_mobile {
     display: block;
     position: absolute;
     right: 0;
     top: -20px;
-    
+  }
+
+  footer {
+    height: 196px;
+    padding: 0 16px;
+  }
+  
+  .footer_box { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 15px;
+    height: 132px;
+    width: 100%;
+  }
+  
+  .light_text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #667085;
+  }
+  
+  .zuri_internship_logo {
+    height: 24px;
+    width: 140px;
+  }
+  .I4G_logo {
+    height: 24px;
+    width: 99px;
   }
 }
