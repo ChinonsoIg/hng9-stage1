@@ -1,9 +1,9 @@
-import './App.css';
-import Passport from './assets/images/passport.jpeg';
-import ShareBtn from './assets/images/share_btn.svg';
-import ShareBtnMobile from './assets/images/share_btn_mobile.svg';
-import SlackIcon from './assets/images/slack_icon.svg';
-import GithubIcon from './assets/images/github_icon.svg';
+import "./App.css";
+import Passport from "./assets/images/passport.jpeg";
+import ShareBtn from "./assets/images/share_btn.svg";
+import ShareBtnMobile from "./assets/images/share_btn_mobile.svg";
+import SlackIcon from "./assets/images/slack_icon.svg";
+import GithubIcon from "./assets/images/github_icon.svg";
 import I4GLogo from "./assets/images/I4G_logo.svg";
 import ZuriInternship from "./assets/images/zuri_internship.svg";
 

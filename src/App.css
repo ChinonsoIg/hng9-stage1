@@ -158,6 +158,10 @@ footer {
     top: -20px;
   }
 
+  a > sub {
+    font-size: 12px;
+  }
+
   footer {
     height: 196px;
     padding: 0 16px;
