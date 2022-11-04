@@ -41,6 +41,9 @@ function App() {
             Design Book
             <sub>To understand design rules better, get our book for free.</sub>
           </a>
+          <a href="https://books.zuri.team/design-rules" target="_blank" rel="noreferrer" id="book__design">
+            Contact Me
+          </a>
           <div className="social_icons">
             <a href="https://hng9.slack.com" className="exclude_link" target="_blank" rel="noreferrer">
               <img src={SlackIcon} alt="Slack icon" className="social_icon" />
