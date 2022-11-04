@@ -112,6 +112,18 @@ textarea {
   color: #FFFFFF;
 }
 
+.validation_erorr {
+  display: none;
+}
+
+.first_name_error, .last_name_error, .email_error, .message_error {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #F83F23;
+}
+
 
 /* Mobile devices 575.98px and below */
 @media (max-width: 575.98px) {
