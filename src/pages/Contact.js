@@ -4,8 +4,8 @@ import "../styles/Contact.css";
 const Contact = () => {
   return (
     <div className="contact_container">
-      <p className="contact_me">Contact Me</p>
-      <p>Hi there, contact me to ask me about anything you have in mind.</p>
+      <h1 className="heading">Contact Me</h1>
+      <p className="heading_description">Hi there, contact me to ask me about anything you have in mind.</p>
       <section>
         <form>
           <div className="form_container">
@@ -40,7 +40,7 @@ const Contact = () => {
               <label for="agree">You agree to providing your data to Chinonso who may contact you.</label>
             </div>
           </div>
-          <button id="btn_submit">Send message</button>
+          <button type="submit" id="btn_submit">Send message</button>
         </form>
       </section>
     </div>
