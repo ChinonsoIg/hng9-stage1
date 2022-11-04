@@ -1,14 +1,12 @@
 .App {
   max-width: 1440px;
   margin: 0 auto;
-  border: 2px solid green;
 }
 
 main {
   padding: 64px 16px;
   max-width: 1152px;
   margin: 0 auto;
-  border: 2px solid red;
 }
 
 header {

@@ -1,6 +1,37 @@
-.container {
-  padding: 64px 16px;
-  max-width: 1152px;
+.contact_container {
+  padding: 156px 16px;
+  max-width: 720px;
   margin: 0 auto;
   border: 2px solid red;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+p.contact_me {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+  letter-spacing: -2%;
+  color: #101828;
+  margin-bottom: 20px;
+}
+
+
+/* Mobile devices 575.98px and below */
+@media (max-width: 575.98px) {
+  .contact_container {
+    padding: 64px 16px;
+  }
+  
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  
+  p.contact_me {
+    margin-bottom: 16px;
+  }
 }
