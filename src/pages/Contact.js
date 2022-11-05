@@ -58,12 +58,13 @@ const Contact = () => {
     if (!firstName || !lastName || !email || !message) {
       return;
     }
-    
-    console.log("data: ", { firstName, lastName, email, message });
+
+    // console.log("data: ", { firstName, lastName, email, message });
     setFirstName("");
     setLastName("");
     setEmail("");
     setMessage("");
+    alert("Success");
 
   };
 
@@ -157,14 +158,17 @@ const Contact = () => {
               </sub>
             </div>
             <div className="checkbox_item">
+            <label htmlFor="agree" className="check">
               <input
                 type="checkbox"
                 id="agree"
                 name="agree"
                 onChange={(e) => setIsChecked(!isChecked)}
                 defaultValue={isChecked ? "agree" : "disagree"}
+
+                className="checkmark"
               />
-              <label htmlFor="agree">
+                <span></span>
                 You agree to providing your data to Chinonso who may contact
                 you.
               </label>
