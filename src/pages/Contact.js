@@ -13,6 +13,7 @@ const Contact = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isChecked, setIsChecked] = useState(false);
 
   const [firstNameError, setFirstNameError] = useState("");
   const [lastNameError, setLastNameError] = useState("");
@@ -34,6 +35,10 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!isChecked) {
+      return;
+    }
+
     if (!firstName) {
       setFirstNameError("First name is required");
     }
@@ -49,11 +54,17 @@ const Contact = () => {
     if (!message) {
       setMessageError("Please enter a message");
     }
+
+    if (!firstName || !lastName || !email || !message) {
+      return;
+    }
     
-    console.log("data: ", firstName);
-    console.log("data: ", lastName);
-    console.log("data: ", email);
-    console.log("data: ", message);
+    console.log("data: ", { firstName, lastName, email, message });
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setMessage("");
+
   };
 
   return (
@@ -75,7 +86,7 @@ const Contact = () => {
                   defaultValue={firstName}
                   onChange={(e) => {
                     setFirstNameError("");
-                    setFirstName(e.target.value)
+                    setFirstName(e.target.value);
                   }}
                 />
                 <sub
@@ -95,7 +106,7 @@ const Contact = () => {
                   defaultValue={lastName}
                   onChange={(e) => {
                     setLastNameError("");
-                    setLastName(e.target.value)
+                    setLastName(e.target.value);
                   }}
                 />
                 <sub
@@ -146,17 +157,20 @@ const Contact = () => {
               </sub>
             </div>
             <div className="checkbox_item">
-              <input type="checkbox" id="agree" name="agree" defaultValue="Agree" />
+              <input
+                type="checkbox"
+                id="agree"
+                name="agree"
+                onChange={(e) => setIsChecked(!isChecked)}
+                defaultValue={isChecked ? "agree" : "disagree"}
+              />
               <label htmlFor="agree">
                 You agree to providing your data to Chinonso who may contact
                 you.
               </label>
             </div>
           </div>
-          <button
-            type="submit"
-            id="btn_submit"
-            >
+          <button type="submit" id="btn_submit" className={isChecked ? "active" : "disabled"}>
             Send message
           </button>
         </form>
